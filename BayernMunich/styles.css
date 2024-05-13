@@ -1,0 +1,353 @@
+body {
+    background: radial-gradient(#1515f6, rgb(4, 4, 161));
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.audio {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.card {
+    background: linear-gradient(#BF0906, #BF0906, #BF0906, #ccc );
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto; /* Centrar la tarjeta horizontalmente */
+    padding: 20px 10px;
+    box-shadow: 0px 0px 25px #333131;
+    border-radius: 10px;
+}
+
+.card_titulo {
+    padding-top: 10px;
+    font-weight: 100;
+    text-align: center;
+    box-shadow: 0px 0px 50px #1515f6;
+    color:aquamarine ;
+}
+
+.card_subtitulo {
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #ccc;
+    box-shadow: 0 0 40px #fff3;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px; /* Ajusta este valor según sea necesario */
+}
+
+.box video {
+    max-width: 100%;
+    width: 40%;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.video img{
+    width: 48px;
+    height: auto;
+    padding: 0%;
+}
+
+.video span{
+    font-size: 20px;
+    text-align: center;
+}
+
+.card_contenido {
+    font-size: 18px;
+    padding: 20px;
+    background: transparent;
+    text-align: justify;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.card_imagen {
+    width: 60%;
+    border-radius: 35px;
+    display: block;
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+}
+
+.nav {
+    margin-top: 100px;
+    background: radial-gradient(#1515f6, rgb(4, 4, 161));
+    text-align: center; /* Alinea los enlaces al centro */
+}
+
+.title{
+    width:60%;
+    color: #fffe;
+    text-align: center;
+    background: transparent;
+    text-shadow: 10px 10px 10px #000;
+    padding-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    box-sizing: border-box;
+    margin-left: 20%;
+}
+
+.title p{
+    text-align: justify;
+}
+
+.nav__lista {
+    margin: 0;
+    padding: 5px;
+    list-style-type: none; /* Quita los puntos de la lista */
+    flex-wrap: wrap;
+}
+
+.nav__jugadores{
+    display: inline-block;
+    margin: 15px;
+}
+
+.nav__item {
+    display: inline-block;
+    margin: 15px;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #48e;
+    border-radius: 5px;
+    margin: 0 5px; /* Añade espaciado entre enlaces */
+    transition: background-color 0.3s ease; /* Añade transición suave */
+}
+
+.nav__enlace{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #48e;
+    border-radius: 5px;
+    margin: 0 5px; /* Añade espaciado entre enlaces */
+    transition: background-color 0.3s ease; /* Añade transición suave */
+}
+
+.nav__enlace:hover{
+    background: radial-gradient( #fff,#BF0224);
+    color: #000c;
+    font-weight: bold;
+}
+
+.nav__link:hover {
+    background: radial-gradient( #fff,#BF0224);
+    color: #000c;
+    font-weight: bold;
+}
+
+.link__button {
+    border: 1px solid #48e; /* Añade borde sólido */
+    background-color: #48e;
+    padding: 8px 8px; /* Ajusta el padding para un botón más grande */
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+.image_container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en dispositivos más pequeños*/
+    justify-content: center; /* Centra los image-box horizontalmente */
+    position: relative;
+}
+
+.contenedor {
+    overflow: hidden; /* Para evitar que el contenedor colapse debido al float */
+}
+
+#contenido {
+    width: 100%;
+    height: 100%;
+    padding: 20px; /* Espaciado interno */
+    margin-left: 0%;
+    margin-bottom: 15%;
+    margin-top: 1%;
+    background-color: transparent; /* Color de fondo */
+}
+
+.texto {
+    width: 58%; /* Ancho del contenedor del texto */
+    float: left; /* Flotar a la izquierda */
+}
+
+.video {
+    width: 40%; /* Ancho del contenedor del video */
+    float: right; /* Flotar a la derecha */
+}
+
+
+.image_box {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center; /* Alinea el contenido al centro */
+    background: radial-gradient(#A40AF8, #000);    
+    border-radius: 10px;
+    box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    position: relative;
+}
+
+.image_info{
+    color: #ccc;
+}
+
+.image{
+    width: 200px;
+    height: 300;
+    border-radius: 7px;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    box-shadow: 0px 0px 15px #ff0c;
+}
+
+.momentos{
+    text-align: center;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #BF0224;
+    text-shadow: 10px 10px 10px #000;
+}
+
+.texto_image{
+    width: 55%;
+    text-align: justify;
+    float: left;
+}
+
+.contenedor_image{
+    overflow: hidden; /* Para evitar que el contenedor colapse debido al float */
+}
+
+.image_entrenador img{
+    width: 40%;
+    padding-left: 20px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.nombre{
+    padding-top: 40px;
+}
+
+.información_carlo{
+    color: #fff;
+    font-weight: bold;
+    margin-left: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+span{
+    color: #0ff;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+li{
+    margin-bottom: 10px;
+    color: #cccf;
+}
+
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: #000;
+    font-weight: bold;
+}
+
+h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 32px;
+    color: #0ff;
+}
+
+.champions{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ff0;
+    text-shadow: 5px 5px 25px #ccc;
+}
+
+.bandera {
+    width: 25%; /* Ajusta el ancho de la bandera según tus necesidades */
+    height: auto; /* Mantiene la proporción */
+}
+.escudo {
+    width: 25%; /* Ajusta el ancho de la bandera según tus necesidades */
+    height: auto; /* Mantiene la proporción */
+}
+
+.image_info p{
+    color: #ff0c;
+    text-align: left;
+}
+
+.info{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer__content {
+    text-align: center;
+}
+
+.footer__title {
+    margin-bottom: 10px;
+}
+
+.footer__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__item {
+    margin-bottom: 5px;
+}
+
+.footer__credit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer__credit p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer__credit a {
+    display: block; /* Convertir los enlaces en bloques para que cada uno ocupe una línea */
+    margin-bottom: 5px; /* Espacio entre cada enlace */
+    text-decoration: none;
+    color: #fff;
+}
+
+
