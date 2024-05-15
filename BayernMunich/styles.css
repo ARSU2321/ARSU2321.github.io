@@ -350,4 +350,48 @@ h3{
     color: #fff;
 }
 
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .card {
+        max-width: 90%; /* Reducir el ancho de la tarjeta */
+    }
+    .title {
+        width: 80%; /* Ajustar el ancho del título */
+        margin-left: 10%; /* Centrar el título */
+    }
+    .box video {
+        width: 80%; /* Ajustar el ancho del video */
+    }
+    .texto_image {
+        width: 90%; /* Ajustar el ancho del texto */
+    }
+    .image_entrenador img {
+        width: 80%; /* Ajustar el ancho de la imagen del entrenador */
+    }
+    .contenedor2 {
+        width: 90%; /* Ajustar el ancho del contenedor 2 */
+    }
+    #contenido {
+        margin-left: 5%; /* Ajustar el margen izquierdo del contenido */
+        margin-bottom: 5%; /* Ajustar el margen inferior del contenido */
+        margin-top: 5%; /* Ajustar el margen superior del contenido */
+    }
+    .texto {
+        width: 100%; /* Ancho completo para el texto */
+        float: none; /* No flotar el texto */
+    }
+    .video {
+        width: 100%; /* Ancho completo para el video */
+        float: none; /* No flotar el video */
+    }
+    .image_box {
+        max-width: 90%; /* Reducir el ancho máximo de la imagen */
+    }
+    .bandera, .escudo {
+        width: 40%; /* Ajustar el ancho de la bandera y el escudo */
+    }
+}
+
+/* Resto de los estilos */
+/* Aquí incluyes tus estilos originales para pantallas más grandes */
 
