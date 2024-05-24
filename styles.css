@@ -14,7 +14,7 @@ body {
 .card {
     background: linear-gradient(#18233D, #ccce, #18233D);
     text-align: center;
-    max-width: 600px;
+    max-width: 800px;
     margin: 50px auto;
     padding: 20px 10px;
     box-shadow: 0 10px 25px #ccc;
@@ -94,6 +94,7 @@ body {
 .image_entrenador img {
     width: 40%;
     padding: 50px 20px 0 0;
+    margin-left: 2%;
 }
 
 .nombre, .información_carlo {
@@ -241,6 +242,10 @@ h2 {
     text-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
+h1{
+    text-align: center;
+}
+
 h3 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -363,6 +368,125 @@ h3 {
         height: 315px; /* Alto fijo en píxeles */
     }
     
+
+    .información_carlo{
+        text-align: center;
+    }
+
+    .image_entrenador{
+        margin-left: 50px;
+    }
+
+    #video span{
+        margin-left: 10px;
+    }
+
+    .image_container {
+        flex-direction: column; /* Cambiar la dirección de flexión a vertical en dispositivos móviles */
+        align-items: center; /* Centrar las imágenes verticalmente */
+        margin: 0;
+    }
+
+    .image_box {
+        max-width: 250px;
+        width: 100%; /* Las imágenes ocuparán todo el ancho disponible */
+        height: 100px;
+        margin-right: 0;
+    }
+
+    .footer {
+        position: static; /* Restablece la posición del footer en dispositivos más grandes */
+    }
+
+    .card{
+        width: 300px;
+    }
+
+    .titulo{
+        text-align: center;
+    }
+
+    #contenido{
+        margin-left: -30px;
+    }
+
+    footer{
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1400px) {
+
+    body{
+        margin: 0;
+        width: 100%;
+    }
+
+    .nav__lista .nav__item,
+    .nav__lista .nav__jugadores {
+        margin-bottom: 30px; /* Agrega espacio entre los elementos de la lista */
+    }
+
+    .nav__item, .nav__jugadores {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 0; /* Elimina cualquier margen */
+        margin-bottom: 10px; /* Agrega un margen inferior entre los elementos */
+    }
+
+    .nav__link {
+        display: block; /* Muestra los enlaces como bloques para ocupar todo el ancho disponible */
+    }
+    .card {
+        max-width: 90%;
+    }
+    .title {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .texto_image, .texto, .video {
+        width: 90%;
+        float: none;
+    }
+    .image_entrenador img {
+        width: 80%;
+    }
+    .contenedor2 {
+        width: 90%;
+    }
+    #contenido {
+        margin: 5%;
+    }
+    .image_box {
+        max-width: 90%;
+    }
+    .bandera, .escudo {
+        width: 40%;
+    }
+    .momentos{
+        text-align: center;
+    }
+
+    .video h3 {
+        text-align: center; /* Centra el texto horizontalmente */
+        margin: 0 auto; /* Centra el elemento horizontalmente */
+    }
+
+    #video2 {
+        margin: 15px;
+        max-width: 100%;
+        width: 100%; /* Ancho fijo en píxeles */
+        height: 315px; /* Alto fijo en píxeles */
+    }
+    
+    #video1 {
+        margin: 5px;
+        margin-left: -65px;
+        max-width: 100%;
+        width: 100%; /* Ancho fijo en píxeles */
+        height: 315px; /* Alto fijo en píxeles */
+    }
 
     .información_carlo{
         text-align: center;
