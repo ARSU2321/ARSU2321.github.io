@@ -419,17 +419,32 @@ h3 {
         display: flex;
         flex-direction: row; /* Dispone los elementos en una fila horizontal */
         flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
-        justify-content: space-between; /* Espacia los elementos horizontalmente */
+        justify-content: space-around; /* Espacia los elementos horizontalmente */
         align-items: center; /* Alinea los elementos verticalmente en el centro */
         gap: 10px; /* Añade espacio entre los elementos */
+        padding: 10px; /* Añade padding alrededor del contenedor de navegación */
+        background-color: transparent; /* Fondo para la barra de navegación */
+        margin-top: 5px;
+
     }
 
     .nav__item, .nav__jugadores {
-        margin: 5px; /* Espacio alrededor de los elementos */
+        margin: 10px 5px; /* Espacio alrededor de los elementos */
+        margin-top: 5px;
         width: auto; /* Permite que los elementos ocupen solo el ancho necesario */
+        background-color: #0ff;
     }
 
     .nav__link {
+        display: block; /* Muestra los enlaces como bloques para ocupar todo el ancho disponible */
+        text-decoration: none; /* Elimina el subrayado de los enlaces */
+        background-color: transparent; /* Fondo de los enlaces */
+        border-radius: 5px; /* Bordes redondeados para los enlaces */
+        color: #000; /* Color del texto */
+        margin-top: 5px;
+
+    }
+    .nav__enlace {
         display: block; /* Muestra los enlaces como bloques para ocupar todo el ancho disponible */
         padding: 10px 20px; /* Añade padding dentro de los enlaces para hacerlos más grandes */
         text-decoration: none; /* Elimina el subrayado de los enlaces */
@@ -437,7 +452,6 @@ h3 {
         border-radius: 5px; /* Bordes redondeados para los enlaces */
         color: #000; /* Color del texto */
     }
-
     .title {
         width: 80%;
         margin-left: 10%;
@@ -475,6 +489,7 @@ h3 {
     .video h3 {
         text-align: center; /* Centra el texto horizontalmente */
         margin: 0 auto; /* Centra el elemento horizontalmente */
+        margin-top: 55px;
     }
 
     #video2 {
@@ -525,8 +540,8 @@ h3 {
     }
 
     .image_box {
-        flex: 1 1 calc(50% - 20px); /* Cada caja de imagen ocupará aproximadamente el 50% del ancho disponible menos 20px */
-        margin: 10px; /* Asegura que haya un margen de 10px alrededor de cada caja */
+        flex: 1 1 1 calc(50% - 20px); /* Cada caja de imagen ocupará aproximadamente el 50% del ancho disponible menos 20px */
+        margin-left: 5%;/* Asegura que haya un margen de 10px alrededor de cada caja */
         box-sizing: border-box; /* Incluye el padding y border en el ancho y alto */
     }
 
@@ -538,7 +553,7 @@ h3 {
     }
 
     .card img {
-        width: 100%; /* Asegura que la imagen dentro de la tarjeta se ajuste al nuevo ancho */
+        width: 50%; /* Asegura que la imagen dentro de la tarjeta se ajuste al nuevo ancho */
     }
 }
 
