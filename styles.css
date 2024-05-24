@@ -318,10 +318,6 @@ h3 {
     .nav__link {
         display: block; /* Muestra los enlaces como bloques para ocupar todo el ancho disponible */
     }
-
-    .card {
-        max-width: 90%;
-    }
     .title {
         width: 80%;
         margin-left: 10%;
@@ -398,9 +394,6 @@ h3 {
         position: static; /* Restablece la posición del footer en dispositivos más grandes */
     }
 
-    .card{
-        width: 300px;
-    }
 
     .titulo{
         text-align: center;
@@ -417,29 +410,33 @@ h3 {
 }
 
 @media screen and (min-width: 601px) and (max-width: 1400px) {
-
-    body{
+    body {
         margin: 0;
         width: 100%;
     }
 
-    .nav__lista .nav__item,
-    .nav__lista .nav__jugadores {
-        margin-bottom: 30px; /* Agrega espacio entre los elementos de la lista */
+    .nav__lista {
+        display: flex;
+        flex-direction: row; /* Dispone los elementos en una fila horizontal */
+        flex-wrap: nowrap; /* No permite que los elementos se envuelvan en varias líneas */
+        justify-content: space-between; /* Espacia los elementos horizontalmente */
+        align-items: center; /* Alinea los elementos verticalmente en el centro */
     }
 
     .nav__item, .nav__jugadores {
-        width: 100%; /* Ocupa todo el ancho disponible */
-        margin: 0; /* Elimina cualquier margen */
-        margin-bottom: 10px; /* Agrega un margen inferior entre los elementos */
+        margin: 0 10px; /* Espacio horizontal entre los elementos */
+        width: auto; /* Permite que los elementos ocupen solo el ancho necesario */
     }
 
     .nav__link {
         display: block; /* Muestra los enlaces como bloques para ocupar todo el ancho disponible */
     }
-    .card {
-        max-width: 90%;
+    .image_info{
+        text-align: center;
     }
+
+
+
     .title {
         width: 80%;
         margin-left: 10%;
@@ -449,22 +446,28 @@ h3 {
         width: 90%;
         float: none;
     }
+
     .image_entrenador img {
         width: 80%;
     }
+
     .contenedor2 {
         width: 90%;
     }
+
     #contenido {
         margin: 5%;
     }
+
     .image_box {
         max-width: 90%;
     }
+
     .bandera, .escudo {
         width: 40%;
     }
-    .momentos{
+
+    .momentos {
         text-align: center;
     }
 
@@ -474,63 +477,60 @@ h3 {
     }
 
     #video2 {
-        margin: 15px;
+        margin-left: 45px;
         max-width: 100%;
         width: 100%; /* Ancho fijo en píxeles */
         height: 315px; /* Alto fijo en píxeles */
     }
-    
+
     #video1 {
         margin: 5px;
-        margin-left: -65px;
-        max-width: 100%;
-        width: 100%; /* Ancho fijo en píxeles */
+        margin-left: 3%;
+        max-width: 700px;
+        width: 100%;
         height: 315px; /* Alto fijo en píxeles */
     }
 
-    .información_carlo{
-        text-align: center;
+    .información_carlo {
+        text-align: justify;
+        margin-left: 10%;
     }
 
-    .image_entrenador{
-        margin-left: 50px;
-    }
-
-    #video span{
-        margin-left: 10px;
+    .image_entrenador {
+        margin-left: 13%;
     }
 
     .image_container {
-        flex-direction: column; /* Cambiar la dirección de flexión a vertical en dispositivos móviles */
-        align-items: center; /* Centrar las imágenes verticalmente */
-        margin: 0;
-    }
-
-    .image_box {
-        max-width: 250px;
-        width: 100%; /* Las imágenes ocuparán todo el ancho disponible */
-        height: 100px;
-        margin-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .footer {
         position: static; /* Restablece la posición del footer en dispositivos más grandes */
     }
 
-    .card{
-        width: 300px;
-    }
-
-    .titulo{
+    .titulo {
         text-align: center;
     }
 
-    #contenido{
+    #contenido {
         margin-left: -30px;
     }
 
-    footer{
+    footer {
         margin: 0;
         width: 100%;
     }
+
+    /* Ajuste específico para las columnas de imagen en pantallas medianas */
+    .image_box {
+        flex: 1 1 1 calc(50% - 20px); /* Cada caja de imagen ocupará aproximadamente el 50% del ancho disponible menos 20px */
+        margin: 10px; /* Asegura que haya un margen de 10px alrededor de cada caja */
+        box-sizing: border-box; /* Incluye el padding y border en el ancho y alto */
+    }
 }
+
+
+
+
