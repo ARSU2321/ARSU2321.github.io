@@ -292,7 +292,7 @@ h3 {
     color: #ff0c;
 }
 
-@media screen and (max-width: 844px) {
+@media screen and (max-width: 600px) {
 
     body{
         margin: 0;
