@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADIVINA JUGADORES DEL BAYERN MUNICH</title>
+    <link rel="stylesheet" href="/JUEGO_BAYERN/styles.css">
+    <title>TOP PLAYERS</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="nav__lista">
+            <li class="nav__item">
+                <a href="../JUEGO_REALMADRID/juego.html" class="nav__enlace enlace--button">REAL MADRID</a>
+            </li>
+            <li class="nav__item ">
+                <a href="../JUEGO_LIVERPOOL/juego.html" class="nav__enlace enlace--button">LIVERPOOL</a>
+            </li>
+            <li class="nav__item">
+                <a href="../JUEGO_BARCELONA/juegoBarcelona.html" class="nav__enlace enlace--button">BARCELONA</a>
+            </li>
+            <li class="nav__item">
+                <a href="../JUEGO_ACMILAN/juego.html" class="nav__enlace enlace--button">AC MIILAN</a>
+            </li>
+            <li class="nav__item">
+                <a href="juego.html" class="nav__enlace enlace--button">FC BAYERN MUNICH</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="startContainer">
+        <h1>BAYERN MUNICH</h1>
+        <h2>Ingresa tu Nombre para Empezar</h2>
+        <h3>(12 digitos)</h3>
+        <input placeholder="INGRESA TU NOMBRE" type="text" id="playerName" maxlength="12" oninput="this.value = this.value.toUpperCase()">
+        <button id="startGameButton">Iniciar Juego</button>
+        <button id="btnSalir">Salir</button>
+    </div> 
+    <div id="gameContainer" style="display: none;">
+        <div id="hintsContainer">
+            <p class="hint">Equipo: <span id="team"></span></p>
+            <p class="hint">Número: <span id="number"></span></p>
+        </div>
+        <div id="optionsOuterContainer">
+            <div id="optionsContainer">
+                <div id="options">
+                    <button class="option-button" id="option1" onclick="checkGuess(this.innerText)"></button>
+                    <button class="option-button" id="option2" onclick="checkGuess(this.innerText)"></button>
+                    <button class="option-button" id="option3" onclick="checkGuess(this.innerText)"></button>
+                </div>
+            </div>
+        </div>
+        <div id="resultContainer">
+            <div id="result"></div>
+            <button id="nextButton" onclick="nextPlayer()" style="display: none;">Siguiente</button>
+        </div>
+        <div id="playerInfo" style="display: none;">
+            <div class="player-card">
+                <img id="playerImage" class="player-photo" alt="Imagen del jugador">
+                <div class="player-details">
+                    <p id="playerName" class="player-info"></p>
+                    <p id="playerAge" class="player-info"></p>
+                    <p id="playerPosition" class="player-info"></p>
+                    <p id="playerNumber" class="player-info"></p>
+                    <p id="playerHeight" class="player-info"></p>
+                    <p id="playerWeight" class="player-info"></p>
+                    <p id="playerBirthDate" class="player-info"></p>
+                    <p id="playerInfoText" class="player-info"></p>
+                    <div class="player-flags">
+                        <img id="playerCountryFlag" class="player-info-img" alt="Bandera del país">
+                        <img id="playerTeamLogo" class="player-info-img" alt="Logo del equipo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gameOver" style="display: none;">
+        <p id="finalScore"></p>
+        <button id="playAgainButton" onclick="restartGame()">Jugar de Nuevo</button>
+        <button id="iniciar" onclick="iniciarNuevo()">Salir</button>
+    </div>     
+    
+    <div id="congratulations" style="display: none;">
+        <p>¡Felicidades, has adivinado a todos los jugadores!</p>
+        <p id="timeElapsed"></p>
+        <button id="playAgainButtonEnd" onclick="restartGame()">Jugar de Nuevo</button>
+        <button id="saveGameButton" onclick="saveGame()">Guardar Partida</button>
+    </div>
+    
+    <div id="scoreContainer" style="display: none;">
+        <p><span id="score"></span></p>
+        <p id="timer" style="display: none;"></p>
+    </div>
+
+    <!-- Sección para mostrar los mejores jugadores -->
+    <div id="topPlayersContainer">
+        <h2>Top 20 Jugadores</h2>
+        <ol id="topPlayers"></ol>
+        <!--<button id="clearPlayersButton">Eliminar Jugadores Guardados</button>-->
+    </div>    
+    <script src="/JUEGO_BAYERN/condiciones.js"></script>
+</body>
+</html>

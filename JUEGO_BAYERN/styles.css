@@ -1,0 +1,561 @@
+/* Estilos generales */
+body {
+    background: radial-gradient(#1515f6, rgb(4, 4, 161));
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Centrar contenedor del juego */
+#gameContainer, #congratulations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin-bottom: -50px;
+    margin-left: 600px;
+    max-width: 480px;
+}
+
+#startContainer {
+    background-color: #000;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin: auto;
+    box-sizing: border-box;
+    margin-left: 50%;
+}
+
+button {
+    background-color: #f1c40f;
+    color: #1a2c5b;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d4ac0d;
+}
+
+/* Estilos para botones */
+button, .option-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.option-button {
+    width: 100%;
+    max-width: 200px;
+    background-color: #ffffff;
+    color: #1a2c5b;
+    border: 2px solid #1a2c5b;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+.option-button:hover {
+    background-color: #1a2c5b;
+    color: #ffffff;
+}
+
+#hintsContainer {
+    background-color: #1a2c5b;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    color: #ffffff;
+    max-width: 400px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.hint {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#optionsOuterContainer {
+    background-color: #1a2c5b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#optionsContainer {
+    background-color: #e6e6e6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.option-button {
+    margin-left: 20%;
+}
+
+#resultContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:  20px;
+}
+
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#nextButton {
+    background-color: #f1c40f;
+    color: #1a2c5b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: -5px;
+    margin-bottom: -10px;
+}
+
+#nextButton:hover {
+    background-color: #d4ac0d;
+}
+
+#playerInfo {
+    display: none;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #1a2c5b;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 0;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e1e1e1;
+}
+
+#congratulations {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #333;
+}
+
+#congratulations p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #ccc;
+}
+
+#playAgainButton {
+    margin-left: 15%;
+    max-width: 180px;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0px 0px 25px 10px #ccc;
+}
+
+#iniciar {
+    margin-left: 15%;
+    max-width: 180px;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0px 0px 25px 10px #ccc;
+}
+
+#playAgainButtonEnd {
+    background-color: #f1c40f;
+    color: #1a2c5b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-left: 30%;
+}
+
+#exitButtonEnd {
+    background-color: #f1c40f;
+    color: #1a2c5b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-left: 40%;
+}
+
+#saveGameButton {
+    background-color: #f1c40f;
+    color: #1a2c5b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-left: 30%;
+}
+
+#playAgainButtonEnd:hover {
+    background-color: #d4ac0d;
+}
+
+.player-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-left: 0;
+    max-width: 400px;
+}
+
+.player-photo {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    border: 3px solid #007bff;
+}
+
+.player-details {
+    width: 100%;
+}
+
+.player-info {
+    font-size: 14px;
+    margin-top: -10px;
+    margin: 5px 0;
+    color: #000;
+    font-family: sans-serif;
+    max-width: 400px;
+    font-weight: bold;
+}
+
+.player-info-img {
+    max-width: 30px;
+    margin: 5px;
+}
+
+.player-flags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para el contenedor de la barra lateral */
+#topPlayersContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    background-color: #ccce;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 999;
+    border: 2px solid #000;
+    margin-top: 90px;
+    height: 650px;
+    margin-left: 20px;
+}
+
+/* Estilo para el título de la barra lateral */
+#topPlayersContainer h2 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilo para la lista de jugadores en la barra lateral */
+#playerList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para cada elemento de la lista de jugadores */
+#playerList ol {
+    margin-bottom: 40px;
+    margin-left: 0px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #555;
+    padding-left: 20px;
+}
+
+/* Estilo para resaltar el jugador activo en la lista */
+#playerList ol.active {
+    font-weight: bold;
+    color: #000;
+}
+
+#playerName {
+    border-radius: 30px;
+    max-width: 400px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #1515f6;
+}
+
+#topPlayers {
+    color: #1a2c5b;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.player-name {
+    color: #000;
+    font-weight: bold;
+}
+
+.player-item {
+    margin-bottom: 10px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 2px 0;
+    text-align: center;
+    z-index: 9999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav__lista {
+    margin: 0;
+    padding: 5px;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.nav__jugadores {
+    display: inline-block;
+    margin: 15px;
+}
+
+.nav__item {
+    display: inline-block;
+    margin: 15px;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #48e;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav__enlace {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #48e;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav__enlace:hover {
+    background-color: #000;
+    color: #ff0c;
+    font-weight: bold;
+}
+
+.nav__link:hover {
+    background-color: #000;
+    color: #ff0c;
+    font-weight: bold;
+}
+
+.link__button {
+    border: 1px solid #48e;
+    background-color: #48e;
+    padding: 8px 8px;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+    #topPlayersContainer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        border-top: 2px solid #000;
+        border-left: none;
+        margin-top: 200%;
+        padding: 10px;
+    }
+
+    body {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #options{
+        margin-left: -40px;
+    }
+
+    #playerInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin-top: 15px;
+        margin-right: -80px;
+        border: 1px solid #1a2c5b;
+    }
+
+    #gameContainer {
+        margin-top: 180px;
+        margin-bottom: 20px;
+        margin-left: 5%;
+    }
+
+    #gameOver{
+        position: absolute;
+        margin-top: 620px;
+        margin-left: 90px;
+    }
+    
+    #startContainer {
+        justify-content: center;
+        align-items: center;
+        padding: 10px; /* Espaciado interno para asegurar que el contenido no toque los bordes */
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    #resultContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    #congratulations{
+        position: absolute;
+        margin-top: 620px;
+        margin-left: 0px;
+    }
+}
+
+#congratulationsPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+}
+
+#congratulationsPopup .popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#congratulationsPopup h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#congratulationsPopup p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+#closePopup {
+    background-color: #f1c40f;
+    color: #1a2c5b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#closePopup:hover {
+    background-color: #d4ac0d;
+}

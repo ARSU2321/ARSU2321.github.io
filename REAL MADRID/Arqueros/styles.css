@@ -12,58 +12,49 @@ body {
 }
 
 .card {
-    background: linear-gradient( #f00c, #18233D, #f00c,#18233D);
+    background: linear-gradient(#18233D, #ccce, #18233D);
     text-align: center;
     max-width: 600px;
-    margin: 50px auto; /* Centrar la tarjeta horizontalmente */
+    margin: 50px auto;
     padding: 20px 10px;
-    box-shadow: 0px 0px 30px #ccc;
+    box-shadow: 0 10px 25px #ccc;
     border-radius: 20px;
-
 }
 
 .titulo {
     font-weight: bold;
-    text-align: center;
-    color: #fffc ;
+    color: aquamarine;
     background-color: transparent;
     border: none;
     margin-top: 30px;
 }
 
-.title{
-    width:60%;
+.title {
+    width: 60%;
     color: #fffe;
     background: transparent;
     text-shadow: 10px 10px 10px #000;
     font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
+    margin: 0 auto;
     box-sizing: border-box;
-    margin-left: 20%;
 }
 
-.resumen{
+.resumen {
     font-style: italic;
     text-align: justify;
-    text-wrap: wrap;
     margin: 10px;
-    color: #fff;
 }
 
-.card_subtitulo {
-    font-size: 35px;
+.card_subtitulo, .card_frase {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    letter-spacing: 2px;
     text-align: center;
-    color: #fffc;
+    color: #00f;
     background-color: transparent;
 }
 
-.card_frase{
-    color: #ccc;
+.card_frase {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
 }
 
 .box {
@@ -71,51 +62,47 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px; /* Ajusta este valor según sea necesario */
+    margin-top: 20px;
 }
 
 .box video {
     max-width: 100%;
     width: 40%;
-    flex-wrap: wrap;
     height: auto;
 }
 
-.video img{
+.video img {
     width: 50px;
     height: auto;
-    padding: 0%;
 }
 
-.video span{
+.video span {
     font-size: 20px;
     text-align: center;
 }
 
-.texto_image{
+.texto_image {
     width: 55%;
     text-align: justify;
     float: left;
 }
 
-.contenedor_image{
-    overflow: hidden; /* Para evitar que el contenedor colapse debido al float */
+.contenedor_image, .contenedor {
+    overflow: hidden;
 }
 
-.image_entrenador img{
+.image_entrenador img {
     width: 40%;
-    padding-left: 20px;
-    padding-top: 50px;
-    flex-wrap: wrap;
+    padding: 50px 20px 0 0;
 }
 
-.nombre{
+.nombre, .información_carlo {
     padding-top: 40px;
+    font-weight: bold;
 }
 
-.información_carlo{
+.información_carlo {
     color: #fff;
-    font-weight: bold;
     margin-left: 25px;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -123,10 +110,8 @@ body {
 .card_contenido {
     font-size: 18px;
     padding: 20px;
-    background: rgb(2, 2, 173);
     text-align: justify;
-    color: #fff;
-    background-color: transparent;
+    color: #000;
     font-weight: bold;
 }
 
@@ -134,104 +119,84 @@ body {
     width: 200px;
     border-radius: 35px;
     display: block;
-    margin: 0 auto; /* Centrar la imagen horizontalmente */
+    margin: 0 auto;
 }
 
 .nav {
     margin-top: 100px;
     background: radial-gradient(#1515f6, rgb(4, 4, 161));
-    text-align: center; /* Alinea los enlaces al centro */
+    text-align: center;
 }
 
 .nav__lista {
     margin: 0;
     padding: 5px;
-    list-style-type: none; /* Quita los puntos de la lista */
-    flex-wrap: wrap;
+    list-style-type: none;
 }
 
-.nav__jugadores{
+.nav__jugadores, .nav__item {
     display: inline-block;
     margin: 15px;
 }
 
-.nav__item {
-    display: inline-block;
-    margin: 15px;
-}
-
-.nav__link {
+.nav__link, .nav__enlace {
     color: #fff;
     text-decoration: none;
     padding: 10px;
     background-color: #48e;
     border-radius: 5px;
-    margin: 0 5px; /* Añade espaciado entre enlaces */
-    transition: background-color 0.3s ease; /* Añade transición suave */
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
 }
 
-.nav__enlace{
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    background-color: #48e;
-    border-radius: 5px;
-    margin: 0 5px; /* Añade espaciado entre enlaces */
-    transition: background-color 0.3s ease; /* Añade transición suave */
-}
-
-.nav__enlace:hover{
-    background: radial-gradient(#f00, #000);
-    color: #fff;
-    font-weight: bold;
-}
-
-.nav__link:hover {
-    background: radial-gradient(#f00, #000);
-    color: #fff;
+.nav__link:hover, .nav__enlace:hover {
+    background-color: #000;
+    color: #ff0c;
     font-weight: bold;
 }
 
 .link__button {
-    border: 1px solid #48e; /* Añade borde sólido */
+    border: 1px solid #48e;
     background-color: #48e;
-    padding: 8px 8px; /* Ajusta el padding para un botón más grande */
+    padding: 8px;
     color: #fff;
     border-radius: 5px;
     margin-bottom: 20px;
-    text-decoration: none; /* Quita el subrayado de los enlaces */
+    text-decoration: none;
 }
 
 .image_container {
     display: flex;
-    flex-wrap: wrap; /* Permite que las imágenes se ajusten en dispositivos más pequeños*/
-    justify-content: center; /* Centra los image-box horizontalmente */
-    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.contenedor {
-    overflow: hidden; /* Para evitar que el contenedor colapse debido al float */
+.contenedor2 {
+    height: 80%;
+    width: 900px;
 }
 
 #contenido {
     width: 100%;
     height: 100%;
-    padding: 20px; /* Espaciado interno */
-    margin-left: 0%;
-    margin-bottom: 15%;
-    margin-top: 1%;
-    background-color: transparent; /* Color de fondo */
+    padding: 20px;
+    margin: 1% 0 15% 0;
+    background-color: transparent;
 }
 
 .texto {
-    width: 60%; /* Ancho del contenedor del texto */
-    float: left; /* Flotar a la izquierda */
+    width: 57%;
+    float: left;
+}
+
+#video2 {
+    width: 600px; /* Ancho fijo en píxeles */
+    height: 315px; /* Alto fijo en píxeles */
 }
 
 .video {
-    width: 40%; /* Ancho del contenedor del video */
-    float: right; /* Flotar a la derecha */
-    flex-wrap: wrap;
+    width: 40%;
+    float: right;
 }
 
 .image_box {
@@ -239,21 +204,20 @@ body {
     margin: 10px;
     padding: 20px;
     max-width: 300px;
-    text-align: center; /* Alinea el contenido al centro */
-    background: linear-gradient(#000C, #f00, #000);
+    text-align: center;
+    background-color: #000;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #fff; /* Sombra suave */
-    position: relative;
+    box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-.image{
+.image {
     width: 70%;
     border-radius: 7px;
-    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
-    box-shadow: 0px 0px 15px #ff0c;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px #ff0c;
 }
 
-.momentos{
+.momentos {
     text-align: justify;
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
@@ -261,43 +225,36 @@ body {
     font-weight: bold;
 }
 
-span{
+span {
     color: #0ff;
-    font-family: sans-serif;
-    text-align: justify;
 }
 
-li{
+li {
     margin-bottom: 10px;
     color: #cccf;
 }
 
-h2{
+h2 {
     text-align: center;
     font-size: 32px;
     color: #ccc;
     text-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
-h3{
+h3 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin: 10px 0 15px;
     font-size: 32px;
     color: #0ff;
 }
 
-.bandera {
-    width: 20%; /* Ajusta el ancho de la bandera según tus necesidades */
-    height: auto; /* Mantiene la proporción */
-}
-.escudo {
-    width: 20%; /* Ajusta el ancho de la bandera según tus necesidades */
-    height: auto; /* Mantiene la proporción */
+.bandera, .escudo {
+    width: 20%;
+    height: auto;
 }
 
-.image_info p{
+.image_info p {
     color: #ff0c;
     text-align: left;
 }
@@ -342,9 +299,11 @@ h3{
         width: 100%;
     }
 
-    .nav__lista .nav__item,
-    .nav__lista .nav__jugadores {
-        margin-bottom: 30px; /* Agrega espacio entre los elementos de la lista */
+    .nav__lista {
+        display: flex;
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: stretch; /* Estira los elementos para que ocupen todo el ancho */
+        padding: 0; /* Elimina cualquier relleno */
     }
 
     .nav__item, .nav__jugadores {
@@ -396,17 +355,12 @@ h3{
     }
 
 
-    #video1 {
+    #video2 {
         margin: 15px;
         width: 350px; /* Ancho fijo en píxeles */
         height: 315px; /* Alto fijo en píxeles */
     }
     
-    #video2{
-        margin: 15px;
-        width: 350px; /* Ancho fijo en píxeles */
-        height: 315px; /* Alto fijo en píxeles */
-    }
 
     .información_carlo{
         text-align: center;

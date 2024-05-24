@@ -1,4 +1,5 @@
 body {
+    width: 100%;
     background: radial-gradient(#1515f6, rgb(4, 4, 161));
     margin: 0;
     font-family: sans-serif;
@@ -315,12 +316,8 @@ h3{
     padding: 20px;
 }
 
-.footer__content {
+.footer__content, .footer__credit {
     text-align: center;
-}
-
-.footer__title {
-    margin-bottom: 10px;
 }
 
 .footer__list {
@@ -333,65 +330,139 @@ h3{
     margin-bottom: 5px;
 }
 
-.footer__credit {
-    text-align: center;
-    margin-top: 20px;
-}
-
 .footer__credit p {
     margin-bottom: 10px;
     font-size: 14px;
+    color: #ff0c;
 }
 
 .footer__credit a {
-    display: block; /* Convertir los enlaces en bloques para que cada uno ocupe una línea */
-    margin-bottom: 5px; /* Espacio entre cada enlace */
+    display: block;
+    margin-bottom: 5px;
     text-decoration: none;
-    color: #fff;
+    color: #ff0c;
 }
 
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 844px) {
+
+    body{
+        margin: 0;
+        width: 100%;
+    }
+
+
+    .nav__lista .nav__item,
+    .nav__lista .nav__jugadores {
+        margin-bottom: 30px; /* Agrega espacio entre los elementos de la lista */
+    }
+    .nav__item, .nav__jugadores {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 0; /* Elimina cualquier margen */
+        margin-bottom: 10px; /* Agrega un margen inferior entre los elementos */
+    }
+
+    .nav__link {
+        display: block; /* Muestra los enlaces como bloques para ocupar todo el ancho disponible */
+    }
+
     .card {
-        max-width: 90%; /* Reducir el ancho de la tarjeta */
+        max-width: 90%;
+    }
+    .card img{
+        width: 100%;
     }
     .title {
-        width: 80%; /* Ajustar el ancho del título */
-        margin-left: 10%; /* Centrar el título */
+        width: 80%;
+        margin-left: 10%;
     }
     .box video {
-        width: 80%; /* Ajustar el ancho del video */
+        width: 80%;
     }
-    .texto_image {
-        width: 90%; /* Ajustar el ancho del texto */
+    .texto_image, .texto, .video {
+        width: 90%;
+        float: none;
     }
     .image_entrenador img {
-        width: 80%; /* Ajustar el ancho de la imagen del entrenador */
+        width: 80%;
+        margin-left: -25px;
     }
     .contenedor2 {
-        width: 90%; /* Ajustar el ancho del contenedor 2 */
+        width: 90%;
     }
     #contenido {
-        margin-left: 5%; /* Ajustar el margen izquierdo del contenido */
-        margin-bottom: 5%; /* Ajustar el margen inferior del contenido */
-        margin-top: 5%; /* Ajustar el margen superior del contenido */
-    }
-    .texto {
-        width: 100%; /* Ancho completo para el texto */
-        float: none; /* No flotar el texto */
-    }
-    .video {
-        width: 100%; /* Ancho completo para el video */
-        float: none; /* No flotar el video */
+        margin: 5%;
     }
     .image_box {
-        max-width: 90%; /* Reducir el ancho máximo de la imagen */
+        max-width: 90%;
     }
     .bandera, .escudo {
-        width: 40%; /* Ajustar el ancho de la bandera y el escudo */
+        width: 40%;
+    }
+    .momentos{
+        text-align: center;
+    }
+
+    .video h3 {
+        text-align: center; /* Centra el texto horizontalmente */
+        margin: 0 auto; /* Centra el elemento horizontalmente */
+    }
+
+
+    #video1 {
+        margin: 15px;
+        width: 350px; /* Ancho fijo en píxeles */
+        height: 315px; /* Alto fijo en píxeles */
+    }
+    
+    #video2{
+        margin: 15px;
+        width: 350px; /* Ancho fijo en píxeles */
+        height: 315px; /* Alto fijo en píxeles */
+    }
+
+    .información_carlo{
+        text-align: center;
+    }
+
+    .image_entrenador{
+        margin-left: 50px;
+    }
+
+    #video span{
+        margin-left: 10px;
+    }
+
+    .image_container {
+        flex-direction: column; /* Cambiar la dirección de flexión a vertical en dispositivos móviles */
+        align-items: center; /* Centrar las imágenes verticalmente */
+        margin: 0;
+    }
+
+    .image_box {
+        max-width: 250px;
+        width: 100%; /* Las imágenes ocuparán todo el ancho disponible */
+        height: 100px;
+        margin-right: 0;
+    }
+
+    .footer {
+        position: static; /* Restablece la posición del footer en dispositivos más grandes */
+    }
+
+    .card{
+        width: 300px;
+    }
+
+    .titulo{
+        text-align: center;
+    }
+
+    #contenido{
+        margin-left: -30px;
+    }
+
+    footer{
+        margin: 0;
+        width: 100%;
     }
 }
-
-/* Resto de los estilos */
-/* Aquí incluyes tus estilos originales para pantallas más grandes */
-
