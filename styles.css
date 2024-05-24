@@ -418,24 +418,25 @@ h3 {
     .nav__lista {
         display: flex;
         flex-direction: row; /* Dispone los elementos en una fila horizontal */
-        flex-wrap: nowrap; /* No permite que los elementos se envuelvan en varias líneas */
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
         justify-content: space-between; /* Espacia los elementos horizontalmente */
         align-items: center; /* Alinea los elementos verticalmente en el centro */
+        gap: 10px; /* Añade espacio entre los elementos */
     }
 
     .nav__item, .nav__jugadores {
-        margin: 0 10px; /* Espacio horizontal entre los elementos */
+        margin: 5px; /* Espacio alrededor de los elementos */
         width: auto; /* Permite que los elementos ocupen solo el ancho necesario */
     }
 
     .nav__link {
         display: block; /* Muestra los enlaces como bloques para ocupar todo el ancho disponible */
+        padding: 10px 20px; /* Añade padding dentro de los enlaces para hacerlos más grandes */
+        text-decoration: none; /* Elimina el subrayado de los enlaces */
+        background-color: #f0f0f0; /* Fondo de los enlaces */
+        border-radius: 5px; /* Bordes redondeados para los enlaces */
+        color: #000; /* Color del texto */
     }
-    .image_info{
-        text-align: center;
-    }
-
-
 
     .title {
         width: 80%;
@@ -523,13 +524,24 @@ h3 {
         width: 100%;
     }
 
-    /* Ajuste específico para las columnas de imagen en pantallas medianas */
     .image_box {
-        flex: 1 1 1 calc(50% - 20px); /* Cada caja de imagen ocupará aproximadamente el 50% del ancho disponible menos 20px */
+        flex: 1 1 calc(50% - 20px); /* Cada caja de imagen ocupará aproximadamente el 50% del ancho disponible menos 20px */
         margin: 10px; /* Asegura que haya un margen de 10px alrededor de cada caja */
         box-sizing: border-box; /* Incluye el padding y border en el ancho y alto */
     }
+
+    /* Ajuste del ancho de la tarjeta */
+    .card {
+        width: 80%; /* Ajusta el ancho de la tarjeta según tus necesidades */
+        max-width: 100%; /* Asegura que no exceda el 100% del contenedor */
+        margin: 20px auto; /* Centra la tarjeta horizontalmente con un margen */
+    }
+
+    .card img {
+        width: 100%; /* Asegura que la imagen dentro de la tarjeta se ajuste al nuevo ancho */
+    }
 }
+
 
 
 
