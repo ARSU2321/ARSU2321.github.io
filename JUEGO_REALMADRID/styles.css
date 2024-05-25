@@ -454,7 +454,7 @@ button, .option-button {
         position: fixed; /* Fija el contenedor en una posición específica */
         bottom: 0; /* Ubica el contenedor en la parte inferior de la pantalla */
         width: 100%; /* Asegura que el contenedor ocupe todo el ancho de la pantalla */
-        height: auto;
+        height: 5%;
         margin: 0;
         border-top: 2px solid #000;
         border-left: none;
