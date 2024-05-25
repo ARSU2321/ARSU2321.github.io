@@ -462,10 +462,10 @@ button, .option-button {
         background-color: #fff; /* Añade un fondo blanco para que se distinga del contenido */
         margin-top: 150%;
     }
-
     body {
-        display: grid;
-        place-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100vh;
         margin: 0;
     }
