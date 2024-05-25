@@ -449,9 +449,9 @@ button, .option-button {
 }
 
 /* Estilos específicos para dispositivos móviles */
-@media screen and (min-width: 100px) and (max-width: 680px) {
+@media screen and (max-width: 680px) {
     #topPlayersContainer {
-        position: absolute; /* Fija el contenedor en una posición específica */
+        position: fixed; /* Fija el contenedor en una posición específica */
         bottom: 0; /* Ubica el contenedor en la parte inferior de la pantalla */
         width: 100%; /* Asegura que el contenedor ocupe todo el ancho de la pantalla */
         height: 20%;
