@@ -447,19 +447,20 @@ button, .option-button {
     margin-bottom: 20px;
     text-decoration: none;
 }
-
 /* Estilos específicos para dispositivos móviles */
-@media (max-width: 768px) {
+@media screen and (min-width: 100px) and (max-width: 680px) {
     #topPlayersContainer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+        position: fixed; /* Fija el contenedor en una posición específica */
+        bottom: 0; /* Ubica el contenedor en la parte inferior de la pantalla */
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho de la pantalla */
         height: auto;
         margin: 0;
         border-top: 2px solid #000;
         border-left: none;
-        margin-top: 200%;
         padding: 10px;
+        background-color: #fff; /* Añade un fondo blanco para que se distinga del contenido */
+        z-index: 1000; /* Asegura que el contenedor esté por encima de otros elementos */
+        margin-top: 170%;
     }
 
     body {
@@ -490,7 +491,7 @@ button, .option-button {
 
     #gameOver{
         position: absolute;
-        margin-top: 620px;
+        margin-top: 100%;
         margin-left: 90px;
     }
     
@@ -498,8 +499,8 @@ button, .option-button {
         justify-content: center;
         align-items: center;
         padding: 10px; /* Espaciado interno para asegurar que el contenido no toque los bordes */
-        width: 90%;
-        margin-left: 20px;
+        width: 75%;
+        margin-left: 50px;
     }
 
     #resultContainer {
@@ -511,7 +512,79 @@ button, .option-button {
 
     #congratulations{
         position: absolute;
-        margin-top: 620px;
+        margin-top: 470px;
+        margin-left: 12px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1400px) {
+    #topPlayersContainer {
+        position: fixed; /* Fija el contenedor en una posición específica */
+        bottom: 0; /* Ubica el contenedor en la parte inferior de la pantalla */
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho de la pantalla */
+        height: auto;
+        margin: 0;
+        border-top: 2px solid #000;
+        border-left: none;
+        padding: 10px;
+        background-color: #fff; /* Añade un fondo blanco para que se distinga del contenido */
+        z-index: 1000; /* Asegura que el contenedor esté por encima de otros elementos */
+        margin-top: 115%;
+    }
+    body {
+        margin: 0;
+        width: 100%;
+    }
+    #options{
+        margin-left: 15px;
+    }
+
+    .player-card{
+        margin: 20px;
+    }
+
+    #playerInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin-top: 45px;
+        margin-left: 20px;
+        border: 1px solid #1a2c5b;
+    }
+
+    #gameContainer {
+        margin-top: -0%;
+        margin-bottom: 20px;
+        margin-left: 0.1%;
+    }
+
+    #gameOver{
+        position: absolute;
+        margin-top: -250px;
+        margin-left: 70%;
+    }
+    
+    #startContainer {
+        justify-content: center;
+        align-items: center;
+        padding: 10px; /* Espaciado interno para asegurar que el contenido no toque los bordes */
+        width: 90%;
+        margin-left: 250px;
+        margin-top: 50%;
+    }
+
+    #resultContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    #congratulations{
+        position: absolute;
+        margin-top: 450px;
         margin-left: 0px;
     }
 }
